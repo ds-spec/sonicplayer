@@ -1,5 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 @import "tailwindcss";
 
+body {
+  font-family: "Geist", sans-serif;
+}
+
 .notch {
-  clip-path: inset(0px 0px 0px round 0px 0px 20px 20px);
+  clip-path: inset(0px 0px 0px round 0px 0px 60px 60px);
+}
+
+/* Hide scrollbar for Chrome, Safari and Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE and old Edge */
+* {
+  -ms-overflow-style: none;
 }

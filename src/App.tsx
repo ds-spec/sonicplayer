@@ -1,14 +1,16 @@
-import "./App.css";
+import Library from "./components/music-library/library";
+import Notch from "./components/notch/Notch";
+import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
   return (
-    <div className="bg-[#FAFAF9] w-full h-screen font-sans flex justify-center overflow-clip">
-      <div style={{ filter: "drop-shadow(0 3px 12px rgba(0,0,0,0.2))" }}>
-        <div className="flex justify-center items-center w-sm h-16 bg-[#F9F9F9] drop-shadow-2xl notch">
-          <h1 className="text-lg uppercase font-sans leading-none">
-            SONIC BOOM
-          </h1>
-        </div>
+    <div className="bg-[#FAFAF9] h-screen flex overflow-x-hidden">
+      <Sidebar />
+      <main className="mt-28 px-20">
+        <Library />
+      </main>
+      <div className="absolute left-1/2 top-0 -translate-x-1/2 flex-1 flex flex-col justify-start items-center">
+        <Notch />
       </div>
     </div>
   );
