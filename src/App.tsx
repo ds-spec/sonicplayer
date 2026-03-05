@@ -4,7 +4,15 @@ import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
   return (
-    <div className="bg-[#FAFAF9] h-screen flex overflow-x-hidden">
+    <div
+      style={{
+        background: "radial-gradient(circle at 10px 50px, #f9f8f5, #f5f5f4)",
+        backgroundSize: "40vw 35vw",
+        backgroundRepeat: "repeat",
+        backgroundColor: "#fafaf9", 
+      }}
+      className="h-screen flex overflow-x-hidden"
+    >
       <Sidebar />
       <main className="mt-28 px-20">
         <Library />

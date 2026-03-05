@@ -1,8 +1,4 @@
-import { CaretLeftIcon, CaretRightIcon } from "@phosphor-icons/react";
-import { albums } from "../../utility/constants";
 import RecentlyPlayed from "./recently-played";
-import Favourites from "./favourites";
-import Playlists from "./playlists";
 
 export default function Library() {
   return (
@@ -15,8 +11,8 @@ export default function Library() {
       </div>
       <div className="flex flex-col gap-5 pt-12">
         <RecentlyPlayed />
-        <Favourites />
-        <Playlists />
+        {/* <Favourites />
+        <Playlists /> */}
       </div>
     </div>
   );
