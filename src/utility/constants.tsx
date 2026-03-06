@@ -4,6 +4,7 @@ import {
   HouseIcon,
   MagnifyingGlassIcon,
 } from "@phosphor-icons/react";
+import { Variants } from "motion";
 
 export const sidebarIcons = [
   { icon: HouseIcon, key: "home" },
@@ -16,7 +17,7 @@ export const albums = [
     title: "Blinding Lights",
     artist: "The Weeknd",
     image:
-      "https://i.pinimg.com/736x/cf/5f/2f/cf5f2fe0dbb4d3a5e81f9e28cf405978.jpg",
+      "https://upload.wikimedia.org/wikipedia/en/e/e6/The_Weeknd_-_Blinding_Lights.png",
   },
   {
     title: "Wildest Dreams",
@@ -43,3 +44,20 @@ export const albums = [
       "https://i.pinimg.com/736x/ed/3b/2e/ed3b2eff7b40b8df274d058b2a84b8a7.jpg",
   },
 ];
+
+export const tileVariants:Variants = {
+  initial: {
+    y: 8,
+    scale: 1.04,
+  },
+  hover: {
+    y: 0,
+    scale: 1,
+    transition: {
+      type: "spring",
+      stiffness: 300,
+      damping: 30,
+      mass: 0.3,
+    },
+  },
+};
