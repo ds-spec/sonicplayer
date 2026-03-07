@@ -4,23 +4,14 @@ import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
   return (
-    <div
-      style={
-        {
-          // background: "radial-gradient(circle at 10px 50px, #f9f8f5, #f5f5f4)",
-          // // background: "radial-gradient(circle at 10px 50px, #000, #000)",
-          // backgroundSize: "40vw 35vw",
-          // backgroundRepeat: "repeat",
-          // backgroundColor: "#fafaf9",
-        }
-      }
-      className="h-screen bg-[#fafafa] flex overflow-x-hidden"
-    >
-      <Sidebar />
-      <main className="mt-28 ml-20">
+    <div className="h-screen bg-linear-to-bl from-[#f2f2f0] to-[#f3f3f3] dark:bg-linear-to-b dark:from-[#1a1a1a] dark:to-[#121212] flex overflow-x-hidden">
+      <div className="w-56">
+        <Sidebar />
+      </div>
+      <main className="flex-1 pt-28 pl-8">
         <Library />
       </main>
-      <div className="absolute left-1/2 top-0 -translate-x-1/2 flex-1 flex flex-col justify-start items-center">
+      <div className="absolute left-1/2 top-0 -translate-x-1/2">
         <Notch />
       </div>
     </div>

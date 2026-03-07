@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 @import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 body {
   font-family: "Geist", sans-serif;
 }
 
 .notch {
-  clip-path: inset(0px 0px 0px round 0px 0px 60px 60px);
+  clip-path: inset(0px 0px 0px round 0px 0px 30px 30px);
 }
 
 /* Hide scrollbar for Chrome, Safari and Edge */
@@ -22,4 +23,8 @@ body {
 /* Hide scrollbar for IE and old Edge */
 * {
   -ms-overflow-style: none;
+}
+
+.icon-class {
+  @apply cursor-pointer text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white hover:scale-110 transition-all duration-300 ease-out text-2xl;
 }
