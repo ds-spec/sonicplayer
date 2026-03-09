@@ -7,7 +7,9 @@ body {
 }
 
 .notch {
-  clip-path: inset(0px 0px 0px round 0px 0px 30px 30px);
+  clip-path: inset(0px 0px 0px round 0px 0px 12px 12px);
+  position: relative;
+  overflow: visible;
 }
 
 /* Hide scrollbar for Chrome, Safari and Edge */
